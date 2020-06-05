@@ -63,9 +63,9 @@ class Saf_Public {
 	private function registerCheckoutFieldsFilters()
 	{
 		add_filter('woocommerce_checkout_fields', [CheckoutFields::class, 'add_fields'], 10, 1);
-		add_filter('woocommerce_checkout_fields', [CheckoutFields::class, 'modify_address_field'], 11, 1);
-		add_filter('woocommerce_checkout_fields', [CheckoutFields::class, 'reorder_fields'], 12, 1);
-
+		add_filter('woocommerce_checkout_fields', [CheckoutFields::class, 'modify_address_field'], 20, 1);
+		add_filter('woocommerce_checkout_fields', [CheckoutFields::class, 'reorder_fields'], 30, 1);
+		add_filter('woocommerce_default_address_fields', [CheckoutFields::class, 'modify_address_labels']);
 		add_action('woocommerce_checkout_create_order', [CheckoutFields::class, 'storeHouseNumber']);
 	}
 
