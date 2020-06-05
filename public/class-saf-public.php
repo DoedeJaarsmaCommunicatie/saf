@@ -2,6 +2,8 @@
 
 namespace Elderbraum\Saf\Pub;
 
+use Elderbraum\Saf\Pub\WooCommerce\Checkout\CheckoutFields;
+
 /**
  * The public-facing functionality of the plugin.
  *
@@ -54,6 +56,17 @@ class Saf_Public {
 		$this->plugin_name = $plugin_name;
 		$this->version = $version;
 
+		$this->registerCheckoutFieldsFilters();
+	}
+
+
+	private function registerCheckoutFieldsFilters()
+	{
+		add_filter('woocommerce_checkout_fields', [CheckoutFields::class, 'add_fields'], 10, 1);
+		add_filter('woocommerce_checkout_fields', [CheckoutFields::class, 'modify_address_field'], 11, 1);
+		add_filter('woocommerce_checkout_fields', [CheckoutFields::class, 'reorder_fields'], 12, 1);
+
+		add_action('woocommerce_checkout_create_order', [CheckoutFields::class, 'storeHouseNumber']);
 	}
 
 	/**

@@ -85,7 +85,7 @@ class Saf {
 		$this->define_public_hooks();
 
 		\Puc_v4_Factory::buildUpdateChecker(
-			'',
+			'https://github.com/DoedeJaarsmaCommunicatie/saf',
 			SAF_FILE,
 			'saf'
 		);
