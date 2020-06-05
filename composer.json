@@ -1,0 +1,24 @@
+{
+    "name": "elderbraum/woo-split-address-fields",
+    "type": "wordpress-plugin",
+    "require": {
+        "dusank/knapsack": "^10.0",
+        "yahnis-elsts/plugin-update-checker": "^4.9"
+    },
+    "require-dev": {
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mitch Hijlkema",
+            "email": "6103741+Pridestalker@users.noreply.github.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Elderbraum\\Saf\\": "includes",
+            "Elderbraum\\Saf\\Admin\\": "admin",
+            "Elderbraum\\Saf\\Pub\\": "public"
+        }
+    }
+}

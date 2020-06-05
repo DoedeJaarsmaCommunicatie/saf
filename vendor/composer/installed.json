@@ -1,0 +1,110 @@
+[
+    {
+        "name": "dusank/knapsack",
+        "version": "10.0.0",
+        "version_normalized": "10.0.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/DusanKasan/Knapsack.git",
+            "reference": "cc29a0bbaadbfcb958b98aa4fd69a4ad7d173bba"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/DusanKasan/Knapsack/zipball/cc29a0bbaadbfcb958b98aa4fd69a4ad7d173bba",
+            "reference": "cc29a0bbaadbfcb958b98aa4fd69a4ad7d173bba",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.6.0"
+        },
+        "require-dev": {
+            "ciaranmcnulty/phpspec-typehintedmethods": "^1.0",
+            "henrikbjorn/phpspec-code-coverage": "^2.0",
+            "phpmd/phpmd": "^2.0",
+            "phpspec/phpspec": "^2.0",
+            "phpunit/phpunit": "^5.0",
+            "squizlabs/php_codesniffer": "^2.0",
+            "symfony/console": "^2.7"
+        },
+        "time": "2017-04-24T22:52:29+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "files": [
+                "src/collection_functions.php",
+                "src/utility_functions.php"
+            ],
+            "psr-4": {
+                "DusanKasan\\Knapsack\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Dusan Kasan",
+                "email": "dusan@kasan.sk",
+                "homepage": "http://kasan.sk",
+                "role": "Developer"
+            }
+        ],
+        "description": "Collection library for PHP",
+        "homepage": "https://github.com/DusanKasan/Knapsack",
+        "keywords": [
+            "collections",
+            "map",
+            "reduce",
+            "sequences"
+        ]
+    },
+    {
+        "name": "yahnis-elsts/plugin-update-checker",
+        "version": "v4.9",
+        "version_normalized": "4.9.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/YahnisElsts/plugin-update-checker.git",
+            "reference": "28f29c940cc22754aff85a99645e3c0a51c097e8"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/YahnisElsts/plugin-update-checker/zipball/28f29c940cc22754aff85a99645e3c0a51c097e8",
+            "reference": "28f29c940cc22754aff85a99645e3c0a51c097e8",
+            "shasum": ""
+        },
+        "require": {
+            "ext-json": "*",
+            "php": ">=5.2.0"
+        },
+        "time": "2020-02-07T11:07:19+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "files": [
+                "load-v4p9.php"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Yahnis Elsts",
+                "email": "whiteshadow@w-shadow.com",
+                "homepage": "http://w-shadow.com/",
+                "role": "Developer"
+            }
+        ],
+        "description": "A custom update checker for WordPress plugins and themes. Useful if you can't host your plugin in the official WP repository but still want it to support automatic updates.",
+        "homepage": "https://github.com/YahnisElsts/plugin-update-checker/",
+        "keywords": [
+            "automatic updates",
+            "plugin updates",
+            "theme updates",
+            "wordpress"
+        ]
+    }
+]
